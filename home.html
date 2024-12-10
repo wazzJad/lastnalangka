@@ -1,0 +1,234 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Number System Conversion Calculator</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f4f7fa;
+      margin: 0;
+      padding: 0;
+    }
+    
+    header {
+      background-color: #2d3a3f;
+      color: #ffffff;
+      text-align: center;
+      padding: 20px;
+    }
+    
+    h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+
+    section {
+      padding: 20px;
+      max-width: 900px;
+      margin: 0 auto;
+      background-color: #ffffff;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      font-size: 1.8em;
+      color: #333;
+      text-align: center;
+      margin-bottom: 15px;
+    }
+
+    p {
+      line-height: 1.6;
+      font-size: 1.1em;
+      color: #555;
+    }
+
+    .table-container {
+      overflow-x: auto;
+      margin-top: 30px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 0 auto;
+    }
+
+    th, td {
+      padding: 12px;
+      text-align: center;
+      border: 1px solid #ddd;
+    }
+
+    th {
+      background-color: #4CAF50;
+      color: white;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+
+    tr:hover {
+      background-color: #ddd;
+    }
+
+    footer {
+      background-color: #2d3a3f;
+      color: #ffffff;
+      text-align: center;
+      padding: 15px;
+      margin-top: 30px;
+    }
+
+    footer a {
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    p {
+      line-height: 1.6;
+      font-size: 1.1em;
+      color: #555;
+      text-align: center; /* Add this line to center the text */
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Number System Conversion Calculator</h1>
+  </header>
+
+  <section>
+    <h2>Introduction</h2>
+    <p>
+      A number system conversion calculator allows you to easily convert numbers between different numeral systems. The most common number systems used in programming are Binary (Base 2), Decimal (Base 10), Octal (Base 8), and Hexadecimal (Base 16). Each of these systems is used for different purposes, but they can be interconverted.
+    </p>
+    <p>
+      The conversion calculator can take a number in one system and convert it to another. It also includes features like shifting binary bits, allowing you to manipulate binary numbers by shifting the bits to the left or right, or by directly modifying individual bits.
+    </p>
+
+    <h2>Number Conversion Table</h2>
+    <p>Below is a table that illustrates the conversions between the four number systems: Binary (Base-2), Decimal (Base-10), Octal (Base-8), and Hexadecimal (Base-16).</p>
+
+    <div class="table-container">
+      <table>
+        <thead>
+          <tr>
+            <th>Decimal (Base-10)</th>
+            <th>Binary (Base-2)</th>
+            <th>Octal (Base-8)</th>
+            <th>Hexadecimal (Base-16)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>10</td>
+            <td>2</td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>11</td>
+            <td>3</td>
+            <td>3</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>100</td>
+            <td>4</td>
+            <td>4</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>101</td>
+            <td>5</td>
+            <td>5</td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>110</td>
+            <td>6</td>
+            <td>6</td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>111</td>
+            <td>7</td>
+            <td>7</td>
+          </tr>
+          <tr>
+            <td>8</td>
+            <td>1000</td>
+            <td>10</td>
+            <td>8</td>
+          </tr>
+          <tr>
+            <td>9</td>
+            <td>1001</td>
+            <td>11</td>
+            <td>9</td>
+          </tr>
+          <tr>
+            <td>10</td>
+            <td>1010</td>
+            <td>12</td>
+            <td>A</td>
+          </tr>
+          <tr>
+            <td>15</td>
+            <td>1111</td>
+            <td>17</td>
+            <td>F</td>
+          </tr>
+          <tr>
+            <td>16</td>
+            <td>10000</td>
+            <td>20</td>
+            <td>10</td>
+          </tr>
+          <tr>
+            <td>255</td>
+            <td>11111111</td>
+            <td>377</td>
+            <td>FF</td>
+          </tr>
+          <tr>
+            <td>1024</td>
+            <td>10000000000</td>
+            <td>2000</td>
+            <td>400</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Number System Conversion Tool. All rights reserved.
+  </footer>
+
+</body>
+</html>
